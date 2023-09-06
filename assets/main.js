@@ -70,25 +70,22 @@ let stampa2 = document.querySelector('.stampa_2')
 const team2 = [
     
 ];
-let azione = false
+let azione;
 document.getElementById('generate').addEventListener('click', function () {
     team2.nome = document.getElementById('nomeCognome').value
     team2.ruolo = document.getElementById('ruolo').value;
     team2.foto = document.getElementById('foto').value;
     azione = true
+    console.log(azione);
     
-    while (azione === true) {
-        const markup2 = `
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">${team2.nome}</h5>
-              <p class="card-text">${team2.ruolo}</p>
-            </div>
-        </div>`
-        divElement.insertAdjacentHTML('beforeend' , markup2)
-        
-    }
-
+    const markup2 = `
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">${team2.nome}</h5>
+          <p class="card-text">${team2.ruolo}</p>
+        </div>
+    </div>`
+    divElement.insertAdjacentHTML('beforeend' , markup2)
 
 })
 
