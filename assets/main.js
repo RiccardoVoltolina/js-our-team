@@ -80,6 +80,7 @@ document.getElementById('generate').addEventListener('click', function () {
     
     const markup2 = `
     <div class="card" style="width: 18rem;">
+    <img src="${team2.foto}" alt="">
         <div class="card-body">
           <h5 class="card-title">${team2.nome}</h5>
           <p class="card-text">${team2.ruolo}</p>
