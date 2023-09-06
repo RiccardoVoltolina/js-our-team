@@ -9,3 +9,42 @@ BONUS 1:
 Trasformare la stringa foto in una immagine effettiva
 BONUS 2:
 Organizzare i singoli membri in card/schede */
+
+
+// MILESTONE 0
+
+const team = [
+    {
+        nome: 'Angela Caroll',
+        ruolo: 'Chief',
+        foto: './img/angela-caroll-chief-editor.jpg',
+    },
+    {
+        nome: 'Angela Lopez',
+        ruolo: 'Social media manager',
+        foto: './img/angela-lopez-social-media-manager.jpg',
+    },
+    {
+        nome: 'Barbara Ramos',
+        ruolo: 'Graphic designer',
+        foto: './img/barbara-ramos-graphic-designer.jpg',
+    },
+    {
+        nome: 'Scott Estrada',
+        ruolo: 'Developer',
+        foto: './img/scott-estrada-developer.jpg',
+    },
+    {
+        nome: 'Walter Gordon',
+        ruolo: 'Office manager',
+        foto: './img/walter-gordon-office-manager.jpg',
+    },
+    {
+        nome: 'Wayne Barnett',
+        ruolo: 'Founder ceo',
+        foto: './img/wayne-barnett-founder-ceo.jpg',
+    },
+
+
+
+];
