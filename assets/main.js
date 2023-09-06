@@ -55,6 +55,7 @@ for (let i = 0; i < team.length; i++) {
     console.log(membriTeam);
     const markup = `
     <div class="card" style="width: 18rem;">
+    <img src="${membriTeam.foto}" alt="">
         <div class="card-body">
           <h5 class="card-title">${membriTeam.nome}</h5>
           <p class="card-text">${membriTeam.nome}</p>
