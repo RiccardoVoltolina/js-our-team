@@ -44,7 +44,12 @@ const team = [
         ruolo: 'Founder ceo',
         foto: './img/wayne-barnett-founder-ceo.jpg',
     },
-
-
-
 ];
+
+// MILESTONE 1
+
+for (let i = 0; i < team.length; i++) {
+    const membriTeam = team[i];
+    console.log(membriTeam);
+    
+}
