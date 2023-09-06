@@ -70,23 +70,24 @@ let stampa2 = document.querySelector('.stampa_2')
 const team2 = [
     
 ];
+let azione = false
 document.getElementById('generate').addEventListener('click', function () {
     team2.nome = document.getElementById('nomeCognome').value
     team2.ruolo = document.getElementById('ruolo').value;
     team2.foto = document.getElementById('foto').value;
-    for (let i = 0; i < team2.length; i++) {
-        const nuovoMembro = team2[i];
-        console.log(nuovoMembro);
+    azione = true
+    
+    while (azione === true) {
         const markup2 = `
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">${nuovoMembro.nome}</h5>
-              <p class="card-text">${nuovoMembro.ruolo}</p>
+              <h5 class="card-title">${team2.nome}</h5>
+              <p class="card-text">${team2.ruolo}</p>
             </div>
         </div>`
         divElement.insertAdjacentHTML('beforeend' , markup2)
+        
     }
-    
 
 
 })
