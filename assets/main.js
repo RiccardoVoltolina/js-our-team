@@ -47,7 +47,6 @@ const team = [
         foto: './img/wayne-barnett-founder-ceo.jpg',
     },
 ];
-
 // MILESTONE 1
 
 for (let i = 0; i < team.length; i++) {
@@ -58,13 +57,42 @@ for (let i = 0; i < team.length; i++) {
     <img src="${membriTeam.foto}" alt="">
         <div class="card-body">
           <h5 class="card-title">${membriTeam.nome}</h5>
-          <p class="card-text">${membriTeam.nome}</p>
+          <p class="card-text">${membriTeam.ruolo}</p>
         </div>
     </div>`
     console.log(markup);
     divElement.insertAdjacentHTML('beforeend' , markup)
 
 }
+
+let stampa2 = document.querySelector('.stampa_2')
+
+const team2 = [
+    
+];
+document.getElementById('generate').addEventListener('click', function () {
+    team2.nome = document.getElementById('nomeCognome').value
+    team2.ruolo = document.getElementById('ruolo').value;
+    team2.foto = document.getElementById('foto').value;
+    for (let i = 0; i < team2.length; i++) {
+        const nuovoMembro = team2[i];
+        console.log(nuovoMembro);
+        const markup2 = `
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">${nuovoMembro.nome}</h5>
+              <p class="card-text">${nuovoMembro.ruolo}</p>
+            </div>
+        </div>`
+        divElement.insertAdjacentHTML('beforeend' , markup2)
+    }
+    
+
+
+})
+
+
+
 
 
 
