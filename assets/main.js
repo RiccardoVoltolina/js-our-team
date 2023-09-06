@@ -13,6 +13,8 @@ Organizzare i singoli membri in card/schede */
 
 // MILESTONE 0
 
+let divElement = document.querySelector('.stampa')
+
 const team = [
     {
         nome: 'Angela Caroll',
@@ -51,5 +53,17 @@ const team = [
 for (let i = 0; i < team.length; i++) {
     const membriTeam = team[i];
     console.log(membriTeam);
-    
+    const markup = `
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">${membriTeam.nome}</h5>
+          <p class="card-text">${membriTeam.nome}</p>
+        </div>
+    </div>`
+    console.log(markup);
+    divElement.insertAdjacentHTML('beforeend' , markup)
+
 }
+
+
+
